@@ -1,25 +1,333 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
-	<dependencies>
-		<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204" />
-	</dependencies>
-	<scenes>
-		<!--View Controller-->
-		<scene sceneID="tne-QT-ifu">
-			<objects>
-				<viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-					<layoutGuides>
-						<viewControllerLayoutGuide type="top" id="y3c-jy-aDJ" />
-						<viewControllerLayoutGuide type="bottom" id="wfy-db-euE" />
-					</layoutGuides>
-					<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-						<rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-						<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-						<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-					</view>
-				</viewController>
-				<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder" />
-			</objects>
-		</scene>
-	</scenes>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HotdogDetailViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.996078431372549" green="0.7803921568627451" blue="0.396078431372549" alpha="1"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="7" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="131" y="180" width="160" height="240"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="47" width="360" height="150"/>
+                                    <mask key="constraints">
+                                        <include reference="242"/>
+                                        <include reference="243"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="242" firstAttribute="width" constant="360"/>
+                                    <constraint id="243" firstAttribute="height" constant="150"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="242"/>
+                                        <exclude reference="243"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="21" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="159" y="458" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="220" width="354" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="248"/>
+                                        <include reference="249"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="248" firstAttribute="width" constant="354"/>
+                                    <constraint id="249" firstAttribute="height" constant="21"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="248"/>
+                                        <exclude reference="249"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ShortDescription" lineBreakMode="tailTruncation" minimumFontSize="10" id="27" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="342" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="249" width="360" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="63"/>
+                                        <include reference="64"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="63" firstAttribute="width" constant="360"/>
+                                    <constraint id="64" firstAttribute="height" constant="21"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="63"/>
+                                        <exclude reference="64"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="28" translatesAutoresizingMaskIntoConstraints="NO" editable="NO">
+                                <rect key="frame" x="26" y="295" width="160" height="240"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="278" width="360" height="140"/>
+                                    <mask key="constraints">
+                                        <include reference="315"/>
+                                        <include reference="316"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="315" firstAttribute="width" constant="360"/>
+                                    <constraint id="316" firstAttribute="height" constant="140"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="315"/>
+                                        <exclude reference="316"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price" lineBreakMode="tailTruncation" minimumFontSize="10" id="52" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="464" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="444" width="354" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="323"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="323" firstAttribute="height" constant="21"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="323"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="69" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="550" width="46" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="550" width="124" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="263"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="263" firstAttribute="width" constant="124"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="263"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="70" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="328" y="550" width="46" height="30"/>
+                                <state key="normal" title="Add to cart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="257" y="550" width="117" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="80"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="80" firstAttribute="width" constant="117"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="80"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1" minimumFontSize="17" id="71" translatesAutoresizingMaskIntoConstraints="NO" borderStyle="line">
+                                <rect key="frame" x="152" y="550" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="178" y="550" width="43" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="289"/>
+                                        <include reference="290"/>
+                                    </mask>
+                                </variation>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="289" firstAttribute="width" constant="43"/>
+                                    <constraint id="290" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="289"/>
+                                        <exclude reference="290"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7"/>
+                                <exclude reference="21"/>
+                                <exclude reference="27"/>
+                                <exclude reference="28"/>
+                                <exclude reference="52"/>
+                                <exclude reference="69"/>
+                                <exclude reference="70"/>
+                                <exclude reference="71"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="78"/>
+                                <exclude reference="79"/>
+                                <exclude reference="86"/>
+                                <exclude reference="87"/>
+                                <exclude reference="88"/>
+                                <exclude reference="244"/>
+                                <exclude reference="245"/>
+                                <exclude reference="250"/>
+                                <exclude reference="251"/>
+                                <exclude reference="261"/>
+                                <exclude reference="262"/>
+                                <exclude reference="286"/>
+                                <exclude reference="287"/>
+                                <exclude reference="288"/>
+                                <exclude reference="301"/>
+                                <exclude reference="302"/>
+                                <exclude reference="303"/>
+                                <exclude reference="311"/>
+                                <exclude reference="312"/>
+                                <exclude reference="313"/>
+                                <exclude reference="314"/>
+                                <exclude reference="319"/>
+                                <exclude reference="320"/>
+                                <exclude reference="321"/>
+                                <exclude reference="322"/>
+                                <exclude reference="324"/>
+                                <exclude reference="325"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7"/>
+                                <include reference="21"/>
+                                <include reference="27"/>
+                                <include reference="28"/>
+                                <include reference="52"/>
+                                <include reference="69"/>
+                                <include reference="70"/>
+                                <include reference="71"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="78"/>
+                                <include reference="79"/>
+                                <include reference="86"/>
+                                <include reference="87"/>
+                                <include reference="88"/>
+                                <include reference="244"/>
+                                <include reference="245"/>
+                                <include reference="250"/>
+                                <include reference="251"/>
+                                <include reference="261"/>
+                                <include reference="262"/>
+                                <include reference="286"/>
+                                <include reference="287"/>
+                                <include reference="288"/>
+                                <include reference="301"/>
+                                <include reference="302"/>
+                                <include reference="303"/>
+                                <include reference="311"/>
+                                <include reference="312"/>
+                                <include reference="313"/>
+                                <include reference="314"/>
+                                <include reference="319"/>
+                                <include reference="320"/>
+                                <include reference="321"/>
+                                <include reference="322"/>
+                                <include reference="324"/>
+                                <include reference="325"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="78" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="70" secondAttribute="trailing" constant="26"/>
+                            <constraint id="79" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="70" secondAttribute="bottom" constant="20"/>
+                            <constraint id="86" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="27" secondAttribute="trailing" constant="20"/>
+                            <constraint id="87" firstItem="27" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="249"/>
+                            <constraint id="88" firstItem="27" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="244" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="20"/>
+                            <constraint id="245" firstItem="7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="47"/>
+                            <constraint id="250" firstItem="21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="251" firstItem="21" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="220"/>
+                            <constraint id="261" firstItem="69" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="262" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="69" secondAttribute="bottom" constant="20"/>
+                            <constraint id="286" firstItem="71" firstAttribute="centerY" secondItem="70" secondAttribute="centerY"/>
+                            <constraint id="287" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="71" secondAttribute="bottom" constant="20"/>
+                            <constraint id="288" firstItem="71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="301" firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="302" firstItem="21" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="23"/>
+                            <constraint id="303" firstItem="27" firstAttribute="top" secondItem="21" secondAttribute="bottom" constant="8"/>
+                            <constraint id="311" firstItem="28" firstAttribute="leading" secondItem="21" secondAttribute="leading"/>
+                            <constraint id="312" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="28" secondAttribute="bottom" constant="182"/>
+                            <constraint id="313" firstItem="28" firstAttribute="centerX" secondItem="27" secondAttribute="centerX"/>
+                            <constraint id="314" firstItem="28" firstAttribute="centerX" secondItem="71" secondAttribute="centerX"/>
+                            <constraint id="319" firstItem="52" firstAttribute="centerX" secondItem="21" secondAttribute="centerX"/>
+                            <constraint id="320" firstItem="52" firstAttribute="leading" secondItem="28" secondAttribute="leading"/>
+                            <constraint id="321" firstItem="70" firstAttribute="trailing" secondItem="52" secondAttribute="trailing"/>
+                            <constraint id="322" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="52" secondAttribute="bottom" constant="135"/>
+                            <constraint id="324" firstItem="52" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="325" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="52" secondAttribute="trailing" constant="26"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HotDogImageView" destination="7" id="name-outlet-7"/>
+                        <outlet property="NameLabel" destination="21" id="name-outlet-21"/>
+                        <outlet property="ShortDescriptionLabel" destination="27" id="name-outlet-27"/>
+                        <outlet property="DescriptionText" destination="28" id="name-outlet-28"/>
+                        <outlet property="PriceLabel" destination="52" id="name-outlet-52"/>
+                        <outlet property="AddToCartButton" destination="70" id="name-outlet-70"/>
+                        <outlet property="AmountText" destination="71" id="name-outlet-71"/>
+                        <outlet property="CancelButton" destination="69" id="name-outlet-69"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/hotdog1.jpg" width="300" height="200"/>
+        <image name="Images/hotdog2.jpg" width="300" height="200"/>
+        <image name="Images/hotdog3.jpg" width="300" height="200"/>
+        <image name="Images/hotdog4.jpg" width="300" height="200"/>
+        <image name="Images/hotdog5.jpg" width="300" height="200"/>
+        <image name="Images/hotdog6.jpg" width="300" height="200"/>
+    </resources>
 </document>

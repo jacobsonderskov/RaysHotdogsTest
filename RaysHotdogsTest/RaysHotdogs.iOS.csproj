@@ -102,9 +102,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="HotdogDetailViewController.cs" />
+    <Compile Include="HotdogDetailViewController.designer.cs">
+      <DependentUpon>HotdogDetailViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -114,5 +114,13 @@
       <Project>{00866604-D4F4-4F1E-81A7-1325F2DEF756}</Project>
       <Name>RaysHotdogs.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\hotdog1.jpg" />
+    <BundleResource Include="Images\hotdog2.jpg" />
+    <BundleResource Include="Images\hotdog3.jpg" />
+    <BundleResource Include="Images\hotdog4.jpg" />
+    <BundleResource Include="Images\hotdog5.jpg" />
+    <BundleResource Include="Images\hotdog6.jpg" />
   </ItemGroup>
 </Project>
