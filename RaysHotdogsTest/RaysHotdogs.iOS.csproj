@@ -109,4 +109,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
+  <ItemGroup>
+    <ProjectReference Include="..\RaysHotdogs.Core\RaysHotdogs.Core.csproj">
+      <Project>{00866604-D4F4-4F1E-81A7-1325F2DEF756}</Project>
+      <Name>RaysHotdogs.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
