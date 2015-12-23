@@ -37,9 +37,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RaysHotdogsTest\RaysHotdogsTest.csproj">
+    <ProjectReference Include="..\RaysHotdogsTest\RaysHotdogs.iOS.csproj">
       <Project>{E085E353-D7D1-4895-AAE7-31EAB379085A}</Project>
-      <Name>RaysHotdogsTest</Name>
+      <Name>RaysHotdogs.iOS</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>

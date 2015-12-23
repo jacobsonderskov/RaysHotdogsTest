@@ -6,7 +6,7 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{E085E353-D7D1-4895-AAE7-31EAB379085A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RaysHotdogsTest</RootNamespace>
+    <RootNamespace>RaysHotdogs.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>RaysHotdogsTest</AssemblyName>
   </PropertyGroup>

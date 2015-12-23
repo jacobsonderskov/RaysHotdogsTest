@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace RaysHotdogsTest
+namespace RaysHotdogsTest.iOS
 {
 	public class Application
 	{

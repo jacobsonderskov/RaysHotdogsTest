@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaysHotdogsTest", "RaysHotdogsTest\RaysHotdogsTest.csproj", "{E085E353-D7D1-4895-AAE7-31EAB379085A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaysHotdogs.iOS", "RaysHotdogsTest\RaysHotdogs.iOS.csproj", "{E085E353-D7D1-4895-AAE7-31EAB379085A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaysHotdogsTest.UITests", "RaysHotdogsTest.UITests\RaysHotdogsTest.UITests.csproj", "{DE268BD5-A5BD-4526-8B5B-2216B5891331}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaysHotdogs.UITests", "RaysHotdogsTest.UITests\RaysHotdogs.UITests.csproj", "{DE268BD5-A5BD-4526-8B5B-2216B5891331}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

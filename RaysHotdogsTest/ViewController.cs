@@ -2,7 +2,7 @@
 
 using UIKit;
 
-namespace RaysHotdogsTest
+namespace RaysHotdogsTest.iOS
 {
 	public partial class ViewController : UIViewController
 	{
