@@ -92,20 +92,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact">
-                                    <rect key="frame" x="20" y="278" width="360" height="140"/>
+                                    <rect key="frame" x="20" y="290" width="360" height="128"/>
                                     <mask key="constraints">
-                                        <include reference="315"/>
-                                        <include reference="316"/>
+                                        <include reference="337"/>
+                                        <include reference="338"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="315" firstAttribute="width" constant="360"/>
-                                    <constraint id="316" firstAttribute="height" constant="140"/>
+                                    <constraint id="337" firstAttribute="width" constant="360"/>
+                                    <constraint id="338" firstAttribute="height" constant="128"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="315"/>
-                                        <exclude reference="316"/>
+                                        <exclude reference="337"/>
+                                        <exclude reference="338"/>
                                     </mask>
                                 </variation>
                             </textView>
@@ -223,16 +223,15 @@
                                 <exclude reference="301"/>
                                 <exclude reference="302"/>
                                 <exclude reference="303"/>
-                                <exclude reference="311"/>
-                                <exclude reference="312"/>
-                                <exclude reference="313"/>
-                                <exclude reference="314"/>
                                 <exclude reference="319"/>
-                                <exclude reference="320"/>
                                 <exclude reference="321"/>
                                 <exclude reference="322"/>
                                 <exclude reference="324"/>
                                 <exclude reference="325"/>
+                                <exclude reference="335"/>
+                                <exclude reference="339"/>
+                                <exclude reference="340"/>
+                                <exclude reference="341"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -264,16 +263,15 @@
                                 <include reference="301"/>
                                 <include reference="302"/>
                                 <include reference="303"/>
-                                <include reference="311"/>
-                                <include reference="312"/>
-                                <include reference="313"/>
-                                <include reference="314"/>
                                 <include reference="319"/>
-                                <include reference="320"/>
                                 <include reference="321"/>
                                 <include reference="322"/>
                                 <include reference="324"/>
                                 <include reference="325"/>
+                                <include reference="335"/>
+                                <include reference="339"/>
+                                <include reference="340"/>
+                                <include reference="341"/>
                             </mask>
                         </variation>
                         <constraints>
@@ -294,16 +292,15 @@
                             <constraint id="301" firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
                             <constraint id="302" firstItem="21" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="23"/>
                             <constraint id="303" firstItem="27" firstAttribute="top" secondItem="21" secondAttribute="bottom" constant="8"/>
-                            <constraint id="311" firstItem="28" firstAttribute="leading" secondItem="21" secondAttribute="leading"/>
-                            <constraint id="312" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="28" secondAttribute="bottom" constant="182"/>
-                            <constraint id="313" firstItem="28" firstAttribute="centerX" secondItem="27" secondAttribute="centerX"/>
-                            <constraint id="314" firstItem="28" firstAttribute="centerX" secondItem="71" secondAttribute="centerX"/>
                             <constraint id="319" firstItem="52" firstAttribute="centerX" secondItem="21" secondAttribute="centerX"/>
-                            <constraint id="320" firstItem="52" firstAttribute="leading" secondItem="28" secondAttribute="leading"/>
                             <constraint id="321" firstItem="70" firstAttribute="trailing" secondItem="52" secondAttribute="trailing"/>
                             <constraint id="322" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="52" secondAttribute="bottom" constant="135"/>
                             <constraint id="324" firstItem="52" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
                             <constraint id="325" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="52" secondAttribute="trailing" constant="26"/>
+                            <constraint id="335" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="28" secondAttribute="trailing" constant="20"/>
+                            <constraint id="339" firstItem="28" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="340" firstItem="28" firstAttribute="top" secondItem="27" secondAttribute="bottom" constant="20"/>
+                            <constraint id="341" firstItem="52" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="26"/>
                         </constraints>
                     </view>
                     <connections>
